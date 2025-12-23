@@ -59,7 +59,7 @@ Entire pipeline runs **without internet access**.
 
 ---
 
-## 📊 Experimental Results
+## Experimental Results
 
 ### Quantitative Metrics
 
@@ -72,30 +72,38 @@ Entire pipeline runs **without internet access**.
 
 The compact domain-trained Transformer **outperforms fine-tuned GPT-Neo (125M)** on all metrics.
 
+Key Insight: For real-time, offline NPC dialogue, a compact domain-trained Transformer can outperform large general-purpose LLMs in task relevance, latency, and deployability.
+
 ---
 
-### 📈 Result Visualizations
+### Result Visualizations
 
-> eport figures here:
+> [report(PDF)](SentientNPC_AI Voice-Interactive NPC Dialogue Framework.pdf) figures here:
 
-```md
+
 ## Results Visualization
 
+### Chatbot Results
+![Chatbot Results](results/text.png)
+
 ### Model Architecture
-![Transformer Architecture](results/transformer_model.png)
+![Transformer Architecture](results/transformer.png)
 
 ### Attention Heatmap
-![Attention Heatmap](results/attention_heatmap.png)
+![Attention Heatmap](results/attention.png)
 
 ### Evaluation Metrics Comparison
-![Metrics Comparison](results/metrics_table.png)
-```
+![Metrics Comparison](results/metrics.png)
 
-Place images inside a `results/` folder.
+### Size Comparison
+![Size Comparison](results/size_comparision.png)
+
+
+
 
 ---
 
-## 🔎 Explainable AI (XAI)
+## Explainable AI (XAI)
 
 The project includes:
 - Token-level probability inspection
