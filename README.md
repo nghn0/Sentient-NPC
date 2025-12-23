@@ -78,7 +78,7 @@ Key Insight: For real-time, offline NPC dialogue, a compact domain-trained Trans
 
 ### Result Visualizations
 
-> [report(PDF)](SentientNPC_AI Voice-Interactive NPC Dialogue Framework.pdf) figures here:
+> **[report (PDF)](https://github.com/mohanchandrass/Sentient_NPC/blob/main/SentientNPC%20_AI%20Voice-Interactive%20NPC%20Dialogue%C2%A0Framework.pdf)** figures here:
 
 
 ## Results Visualization
