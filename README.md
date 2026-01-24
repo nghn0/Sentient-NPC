@@ -77,42 +77,6 @@ The compact domain-trained Transformer **outperforms fine-tuned GPT-Neo (125M)**
 
 ---
 
-## 📊 Result Visualizations
-
-The following sections showcase the performance metrics, structural design, and interpretability of the Sentient_NPC framework.
-
-### Model Performance & Comparison
-<p align="center">
-  <img src="results/metrics.png" width="48%" alt="Metrics Comparison" />
-  <img src="results/size_comparision.png" width="48%" alt="Size Comparison" />
-</p>
-<p align="center">
-  <em>Left: Quantitative Metrics (BLEU, BERTScore) | Right: Size Comparison (Sentient_NPC vs. GPT-Neo)</em>
-</p>
-
----
-
-### Architecture & Interpretability (XAI)
-<p align="center">
-  <img src="results/transformer.png" width="48%" alt="Transformer Architecture" />
-  <img src="results/attention.png" width="48%" alt="Attention Heatmap" />
-</p>
-<p align="center">
-  <em>Left: Custom Encoder-Decoder Architecture | Right: Attention Heatmap for Token Relevance</em>
-</p>
-
----
-
-### Live Inference Demo
-<p align="center">
-  <img src="results/text.png" width="85%" alt="Chatbot Results" />
-</p>
-<p align="center">
-  <em>Real-time dialogue sample demonstrating lore-consistent NPC responses.</em>
-</p>
-
----
-
 ## Explainable AI (XAI)
 
 This project includes:
@@ -198,3 +162,41 @@ Sentient_NPC/
 - **Mohan Chandra S S**
 - **Mohith R**
 - **Nithish Gowda H N**
+
+---
+
+## 📊 Result Visualizations
+
+The following sections showcase the performance metrics, structural design, and interpretability of the Sentient_NPC framework.
+
+### Model Performance & Comparison
+<p align="center">
+  <img src="results/metrics.png" width="48%" alt="Metrics Comparison" />
+  <img src="results/size_comparision.png" width="48%" alt="Size Comparison" />
+</p>
+<p align="center">
+  <em>Left: Quantitative Metrics (BLEU, BERTScore) | Right: Size Comparison (Sentient_NPC vs. GPT-Neo)</em>
+</p>
+
+---
+
+### Architecture & Interpretability (XAI)
+<p align="center">
+  <img src="results/transformer.png" width="48%" alt="Transformer Architecture" />
+  <img src="results/attention.png" width="48%" alt="Attention Heatmap" />
+</p>
+<p align="center">
+  <em>Left: Custom Encoder-Decoder Architecture | Right: Attention Heatmap for Token Relevance</em>
+</p>
+
+---
+
+### Live Inference Demo
+<p align="center">
+  <img src="results/text.png" width="85%" alt="Chatbot Results" />
+</p>
+<p align="center">
+  <em>Real-time dialogue sample demonstrating lore-consistent NPC responses.</em>
+</p>
+
+---
