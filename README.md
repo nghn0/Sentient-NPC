@@ -4,32 +4,32 @@
 
 ---
 
-## Project Motivation 
+## Project Motivation
 
 Modern games still rely on **static dialogue trees** or cloud-based AI services for NPC interaction.  
 This project demonstrates that **domain-trained, lightweight Transformer models** can enable **real-time, voice-driven NPC conversations entirely offline**, achieving low latency, strong semantic coherence, and lore consistency.
 
 **Sentient_NPC** bridges **AI research** and **game engineering**, making it relevant for:
-- Applied ML / NLP roles
-- Game AI & simulation research
-- Edge AI & on-device inference
-- Speech + language systems
+- Applied Machine Learning / Natural Language Processing roles
+- Game AI and simulation research
+- Edge AI and on-device inference
+- Speech and language systems
 
 ---
 
 ## Key Contributions
 
 - Designed a **fully offline STT → NLP → TTS pipeline**
-- Built a **custom Transformer dialogue model (≈2.6M params)**
+- Built a **custom Transformer dialogue model (~2.6M parameters)**
 - Trained on **7,565 Skyrim-style NPC–Player dialogue pairs**
-- Achieved **BERTScore-F1 ≈ 0.90** with sub-300 ms inference (excluding TTS playback)
-- Released **full training notebook (`training.ipynb`)** for reproducibility
+- Achieved **BERTScore-F1 ~ 0.90** with **sub-300 ms inference** *(excluding TTS playback)*
+- Released the **full training notebook (`training.ipynb`)** for reproducibility
 
 ---
 
 ## System Architecture
 
-```
+```text
 Player Speech
      ↓
 Offline Speech-to-Text (Vosk)
@@ -41,21 +41,21 @@ Offline Text-to-Speech (Silero)
 Spoken NPC Response
 ```
 
-Entire pipeline runs **without internet access**.
+The entire pipeline runs **without internet access**.
 
 ---
 
 ## Model Overview
 
-- Architecture: Encoder–Decoder Transformer
-- Attention: Multi-head self + cross attention
-- Training: Teacher forcing with masked loss
-- Optimizer: AdamW + warmup cosine decay
-- Precision: Mixed precision supported
-- Inference: Greedy + Top-k sampling
+- **Architecture:** Encoder–Decoder Transformer  
+- **Attention:** Multi-head self-attention + cross-attention  
+- **Training:** Teacher forcing with masked loss  
+- **Optimizer:** AdamW + warmup cosine decay  
+- **Precision:** Mixed precision supported  
+- **Inference:** Greedy decoding + Top-k sampling  
 
-**Model Size**: ~30 MB  
-**Chatbot Latency**: ~245 ms  
+**Model Size:** ~30 MB  
+**Chatbot Latency:** ~245 ms  
 
 ---
 
@@ -72,16 +72,14 @@ Entire pipeline runs **without internet access**.
 
 The compact domain-trained Transformer **outperforms fine-tuned GPT-Neo (125M)** on all metrics.
 
-Key Insight: For real-time, offline NPC dialogue, a compact domain-trained Transformer can outperform large general-purpose LLMs in task relevance, latency, and deployability.
+**Key Insight:** For real-time, offline NPC dialogue, a compact domain-trained Transformer can outperform large general-purpose language models in task relevance, latency, and deployability.
 
 ---
 
-### Result Visualizations
+## Result Visualizations
 
-> **[report (PDF)](https://github.com/mohanchandrass/Sentient_NPC/blob/main/SentientNPC%20_AI%20Voice-Interactive%20NPC%20Dialogue%C2%A0Framework.pdf)** figures here:
-
-
-## Results Visualization
+> **Report (PDF):**  
+> **[Sentient_NPC – AI Voice-Interactive NPC Dialogue Framework](https://github.com/mohanchandrass/Sentient_NPC/blob/main/SentientNPC%20_AI%20Voice-Interactive%20NPC%20Dialogue%C2%A0Framework.pdf)**
 
 ### Chatbot Results
 ![Chatbot Results](results/text.png)
@@ -98,19 +96,16 @@ Key Insight: For real-time, offline NPC dialogue, a compact domain-trained Trans
 ### Size Comparison
 ![Size Comparison](results/size_comparision.png)
 
-
-
-
 ---
 
 ## Explainable AI (XAI)
 
-The project includes:
+This project includes:
 - Token-level probability inspection
 - Attention heatmap visualization
 - Decoder confidence analysis
 
-These tools help interpret **why** the model generates a response — a strong plus for research and responsible AI.
+These tools help interpret **why** the model generates a response — useful for research and responsible AI.
 
 ---
 
@@ -132,13 +127,13 @@ These tools help interpret **why** the model generates a response — a strong p
 pip install transformers datasets sacrebleu bert-score tensorflow
 ```
 
-Open `training.ipynb` and run cells sequentially.
+Open `training.ipynb` and run the cells sequentially.
 
 ---
 
 ## Repository Structure
 
-```
+```text
 Sentient_NPC/
 │
 ├── training.ipynb        # Full research & training pipeline
@@ -156,18 +151,18 @@ Sentient_NPC/
 
 ## Applications
 
-- Voice-driven NPCs in RPGs
+- Voice-driven NPCs in role-playing games
 - Offline conversational agents
 - Edge-device AI assistants
-- Game AI research & prototyping
+- Game AI research and prototyping
 - Speech + NLP academic research
 
 ---
 
 ## Limitations
 
-- Single-turn dialogue (no memory yet)
-- Domain-specific (Skyrim-style)
+- Single-turn dialogue *(no memory yet)*
+- Domain-specific *(Skyrim-style)*
 - TTS playback dominates latency
 
 ---
@@ -175,10 +170,10 @@ Sentient_NPC/
 ## Future Work
 
 - Multi-turn conversational memory
-- NPC personality & emotion control
+- NPC personality and emotion control
 - Unity / Unreal Engine integration
 - Reinforcement learning for adaptive dialogue
-- Model compression for mobile & VR
+- Model compression for mobile and virtual reality
 - Multi-language NPC support
 
 ---
@@ -186,15 +181,5 @@ Sentient_NPC/
 ## Authors
 
 - **Mohan Chandra S S**
-- Mohith R  
-- Nithish Gowda H N  
-
----
-
-## License
-
-Released for **academic and research purposes**.
-
----
-
-> ⭐ *If this repository helped you or inspired your work, please consider starring it.*
+- **Mohith R**
+- **Nithish Gowda H N**
