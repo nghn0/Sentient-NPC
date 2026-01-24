@@ -1,5 +1,6 @@
 # Sentient_NPC  
 ## Lightweight Offline Voice-Interactive NPC Dialogue Framework  
+<p align="left"> <img src="https://img.shields.io/badge/AI-NLP%20%7C%20Speech-orange?style=flat-square" alt="AI"> <img src="https://img.shields.io/badge/Architecture-Transformer-blue?style=flat-square" alt="Transformer"> <img src="https://img.shields.io/badge/Performance-245ms%20Latency-green?style=flat-square" alt="Latency"> <img src="https://img.shields.io/badge/Deployment-Fully%20Offline-lightgrey?style=flat-square" alt="Offline"> </p>
 *A research-oriented, fully offline conversational AI system for immersive games*
 
 ---
