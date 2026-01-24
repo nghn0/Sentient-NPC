@@ -159,9 +159,9 @@ Sentient_NPC/
 
 ## Authors
 
-- **Mohan Chandra S S** - Btech(Hons.) AI & ML Major
-- **Mohith R** - Btech(Hons.) AI & ML Major
-- **Nithish Gowda H N** - Btech(Hons.) AI & ML Major
+- **Mohan Chandra S S** - Btech(Hons.) CSE, AI & ML Major
+- **Mohith R** - Btech(Hons.) CSE, AI & ML Major
+- **Nithish Gowda H N** - Btech(Hons.) CSE, AI & ML Major
 
 ---
 
