@@ -165,7 +165,7 @@ Sentient_NPC/
 
 ---
 
-## 📊 Result Visualizations
+## Result Visualizations
 
 The following sections showcase the performance metrics, structural design, and interpretability of the Sentient_NPC framework.
 
